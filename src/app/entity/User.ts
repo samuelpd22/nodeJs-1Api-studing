@@ -1,15 +1,15 @@
 import { Entity, PrimaryGeneratedColumn, Column } from "typeorm"
 
-@Entity()
+@Entity('users')
 export class User {
 
-    @PrimaryGeneratedColumn()
+    @PrimaryGeneratedColumn('increment')
     id: number
 
-    @Column()
+    @Column('varchar')
     name: string
 
-    @Column()
+    @Column('varchar')
     email: string
 
 
